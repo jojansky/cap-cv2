@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Here goes the image upload form -->
+    <div class="row">
+        <h3>The results are as follows </h3>
+        <img src="{{url_for('static', filename=input_img, r=rand_num)}}">
+        <img src="{{url_for('static', filename=output_img, r=rand_num)}}">
+    </div>
+
+{% endblock %}

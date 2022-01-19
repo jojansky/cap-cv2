@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/classify" enctype="multipart/form-data" method="POST" id="ClassifyInputForm">
+    <div class="row">
+        <!-- <div>
+            <label for="inputCarImg" class="form-label">Upload car image to be classified</label>
+            <div class="drag-image bg-info border rounded-3">
+                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <h6>Drag & Drop File Here</h6>
+                <span>OR</span>
+                <button>Browse File</button>
+                <input type="image" hidden name="inputCarImg" id="inputCarImg">
+            </div>
+        </div> -->
+        <input type="file" name="inputCarImg" id="inputCarImg">
+        <div class="mt-3">
+            <button class="btn btn-primary btn-lg" type="submit" >Submit for Prediction</button>
+        </div>
+    </div>
+</form>
+
+{% endblock %}
